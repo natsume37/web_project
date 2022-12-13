@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单</title>
+    <style type="text/css">
+      #img {
+        width: 30px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>初识表单--6-7</p>
+    <form action="#" method="post" name="login">
+      用户名：
+      <input type="text" placeholder="用户名" />
+      密码：
+      <input type="password" placeholder="密码" />
+      <input type="submit" value="确认" />
+    </form>
+    <br /><br /><br />
+    <p>input属性----6-8</p>
+    <form action="#" method="post" name="login">
+      用户名：
+      <input type="text" value="康硕" maxlength="8" /><br /><br />
+      密码：
+      <input type="password" size="20" /> <br /><br />
+      性别：
+      <input type="radio" name="sex" checked="hecked" />男<input
+        type="radio"
+        name="sex"
+      />女<br /><br />
+      兴趣爱好：
+      <input type="checkbox" />旅游 <input type="checkbox" />读书
+      <input type="checkbox" />打cf <br /><br />
+      上传文件：
+      <input type="file" /><br /><br />
+      <input type="submit" />
+      <input type="reset" />
+      <input type="button" value="普通按钮" />
+      <input id="img" type="image" src="../素材/憨狗.jpg" size="20" />
+      <input type="hidden" />
+    </form>
+    <br /><br /><br />
+    <p>lable标签---6-9</p>
+    <form action="#" method="post">
+      <label for="name">用户名</label>
+      <input type="text" maxlength="8" id="name" /><br /><br />
+      性别：
+      <input type="radio" name="sex" checked="checked" id="man" /><label
+        for="man"
+        >男</label
+      >
+      <input type="radio" name="sex" id="woman" /><label for="woman">女</label>
+    </form>
+    <br /><br /><br />
+    <p>textaread多行输入框---6-10</p>
+    <form action="#" method="post">
+      留言：
+      <br />
+      <textarea name="留言" cols="30" rows="10">
+将问题回馈给我们，反正我们不回复</textarea
+      >
+    </form>
+    <p>下拉框select---6-11</p>
+    <form action="#" method="post">
+      学历：
+      <br />
+      普通的
+      <select>
+        <option value="one">请选择</option>
+        <option value="two">大专</option>
+        <option value="three">高中</option>
+        <option value="four">初中</option>
+      </select>
+      单选默认
+      <select>
+        <option value="two">美术</option>
+        <option value="three">体育</option>
+        <option value="four" selected="selected">打游戏</option>
+      </select>
+      双选的
+      <select multiple="mutiple">
+        <option value="one">请选择</option>
+        <option value="two">大专</option>
+        <option value="three">高中</option>
+        <option value="four">初中</option>
+      </select>
+      <input type="submit" value="提交" />
+    </form>
+    <br /><br /><br />
+    <p>分组optgroup</p>
+    <form action="#" method="post">
+      所在地区：
+      <br />
+      <select name="" id="">
+        <optgroup label="河南">
+          <option value="">南阳</option>
+          <option value="">信阳</option>
+          <option value="">周口</option>
+          <option value="">商丘</option>
+        </optgroup>
+        <optgroup label="北京">
+          <option value="">昌平区</option>
+          <option value="">海淀区</option>
+          <option value="">朝阳区</option>
+        </optgroup>
+        <optgroup label="天津">
+          <option value="">河东区</option>
+          <option value="">河西区</option>
+          <option value="">武清区</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>

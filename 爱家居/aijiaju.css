@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+}
+body{
+    font-family: '微软雅黑';
+    background: #fdfdfd;
+}
+
+/* 导航栏 */
+#bg{
+    width: 1200px;
+    height: 617px;
+    background:url(./aijiaju_image/2022_11_18_shenghuo/bg.png) no-repeat center;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav{
+    width: 850px;
+    height: 50px;
+    /* background: ; */
+    margin: 0 auto;
+    padding: 50px 0 0 150px;
+    background: url(./aijiaju_image/2022_11_18_shenghuo/logo.png) left center no-repeat;
+}
+.nav span{
+    color: #685649;
+    font-size: 16px;
+    padding: 0 30px;
+}
+.nav .search{
+    float: right;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100px;
+    color: #aaa;
+    font-size: 14px;
+    background: #fff url(./aijiaju_image/2022_11_18_shenghuo/f.png) no-repeat 10px center;
+}
+/* header结束 */
+
+/* 热门推荐 */
+#news{
+    width: 1200px;
+    height: 455px;
+    background: url(./aijiaju_image/2022_11_18_shenghuo/dongtai.jpg) center top no-repeat;
+    margin: 18px auto;
+    padding-top: 120px;
+}
+.news_con{
+    float: left;
+    margin-left: 70px;
+}
+.news_con .one{
+    width: 284px;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.news_con .two{
+    width: 284px;
+    height: 70px;
+    line-height: 20px;
+    padding: 10px 0 0 10px ;
+    font-size: 12px;
+    color: #bbb;
+}
+.news_con .shadow{
+    width: 294px;
+    height: 5px;
+    background:url(./aijiaju_image/2022_11_18_shenghuo/yinying.jpg) no-repeat;
+}
+
+/* 夏日生活 */
+#exhibition{
+    
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a:link,a:visited{text-decoration: none;color: #fff;font-size: 16px;}
+body{
+    font-family: '微软雅黑';
+    font-size: 14px;
+    background: #fff9ed;
+}
+.title{
+    width: 100%;
+    height: 128px;
+    background: url(./images/head_bg.jpg) repeat-x;
+    border-bottom: 3px solid #d5d5d5;
+}
+.ut{
+    width: 980px;
+    margin: 0 auto;
+}
+li{
+    float: left;
+}
+li a{
+    display: inline-block;
+    height: 91px;
+    width: 119px;
+    text-align: center;
+    line-height: 70px;
+}
+li a:hover{
+    background: url(images/xuanfu.png) center center;
+}
+/* content */
+.content{
+    width: 980px;
+    margin: 0 auto;
+}
+.style_bg{
+    width: 908px;
+    height: 330px;
+    background: #6dbf2d;
+    padding: 10px 36px 5px;
+}
+style{
+    width: 892px;
+    height: 314px;
+    background: #fff;
+    background: 8px 10px 8px 6px;
+}
+.style dl{
+    width: 279px;
+    height: 313px;
+    float: left;
+    margin-left: 4px;
+}
+.style .third{width: 322px;}
+.style dt,.style dd{float: left;}
+.style .left1,.style .left3,.style .center1,.style .center3{width: 162px;}
+.style .left2,.style .left4,.style .center2.style .center4,.style .right2{width: 117px;}
+.style .left1,.style .left2,.style .center1,.style .center2{margin-bottom: 8px;}
+.style .left1{
+    height: 169px;
+    background: url(images/pic01.jpg) no-repeat;
+}
+.style .left2{
+    height: 169px;
+    line-height: 169px;
+}
+.style .left3{
+    height: 137px;
+    background: url(images/pic02.jpg) no-repeat;
+}
+.style .left4{
+    height: 137px;
+    line-height: 137px;
+}
+.style .center1{
+    height: 117px;
+    background: url(images/pic03.jpg) no-repeat;
+}
+.style .center2{
+    height: 117px;
+    line-height: 117px;
+}
+.style .center3{
+    height: 188px;
+    background: url(images/pic04.jpg) no-repeat;
+}
+.style .center4{
+    height: 188px;
+    line-height: 188px;
+}
+.style .right1{
+    width: 205px;
+    height: 314px;
+    background:url(images/pic05.jpg) no-repeat;
+}
+.style .right2{
+    height: 314px;
+    line-height: 314px;
+}
+.third{
+    position: absolute;
+
+    left: 800px;
+}
+.style a{
+    display: block;
+    background: #f2f2f2;
+    text-align: center;
+    color: #333;
+}
+.style a:hover{background: #6dbf2d;}
+.content{
+}

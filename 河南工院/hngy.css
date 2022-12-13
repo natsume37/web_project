@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: '微软雅黑';
+    background: #fdfdfd;
+    font-size: 20px;
+}
+.yi{
+    width: 1400px;
+    margin: 0 auto;
+    height: auto;
+    align-content: center;
+    box-shadow: 1px 1px 2px #666;
+}
+
+/* header_top */
+div.huanying{
+    display: inline;
+    float: left;
+    border:1px 50px 1px 1px ;
+}
+div.youshang{
+    text-align: right;
+}
+div.logo{
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+}
+img.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    display: inline;
+}
+/* search */
+button,input{
+    float: right;
+    display: inline;
+    margin: 20px;
+    padding: 7px;
+    border-radius: 20px 20px;
+}
+button{
+    margin-right: 1px;
+}
+input{
+    margin-left: 1px;
+}
+/* 导航栏 */ 
+/* ul{
+    display: inline-block;
+    margin-left: 5%;
+} */
+.nav{
+    height: 40px;
+    background: blue;
+    box-shadow: 0px 1px 2px #666;
+    position: relative;  /* 添加相对定位，解决元素堆叠问题 */
+}
+.libt{
+    float: left;
+    width: 140px;
+    height: 40px;
+    align-content: center;
+    line-height: 40px;
+}
+.libt a{
+    color: #fdfdfd;
+    display: block;  /* 块显示 */
+    text-align: center;
+}
+/* 鼠标悬停阴影 */
+.libt a:hover{
+    background: #fdfdfd;
+    color: red;
+}
+.dierji{
+    background: blue;
+    box-shadow: 0px 1px 2px #666;
+    display: none;
+    z-index: 3;
+}
+/* 二级标签显示 */
+.libt:hover .dierji{
+    display: block;
+}
+
+/* 照片 */
+.img{
+    width: 1400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+}
+.tupian{
+    width: 1400px;
+    height: auto;
+    z-index: -3;
+}
+
+/* 快速链接 */
+.kslj{
+    float: left;
+    width: 1200px;
+    height: 490px;
+    margin: 1px 80px;
+    padding: 10px 10px;
+    margin-bottom: 1px;
+}
+.kslj-1{
+    width: 320px;
+    height: 450px;
+    align-content: center;
+}
+#kslj-t{  /* 标题 */
+    width: 100px;
+    height: 30px;
+    padding: 1px;   
+    position: relative;  /* 设置相对偏移，方便左描边，不改变文档流位置 */
+    left: 120px;  /* 相对左偏移 */
+    text-align: center;
+    color:#0058A0;;
+    font-size: 20px;
+    border-left: 2px coral solid;
+}
+
+.u-list{
+    /* 设置列表边框 */
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    border: 2px solid #0058A0;
+    border-radius: 50px /50px;
+    align-content: center;
+}
+.k-tupian-1{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.uky .ulist a{
+    font-size: 20px;
+}
+
+/* 学院新闻 */
+
+.kslj-2{
+    position: relative;
+    left: 320px;
+    top: -450px;
+    width: 800px;
+    height: 450px;
+}
+.img-kslj{
+    width: 500px;
+    height: auto;
+    margin: 50px 10px 0px 10px;
+}
+/* 快速了解右列表 */
+.d-list{
+    width: 470px;
+    height: 380px;
+    position: relative;
+    left: 590px;
+    top: -350px;
+    font-size: 20px;
+}
+
+.w-list a{
+    display: block;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+/* 热门评论 */
+.hot-say{
+    width: 1400px;
+    height: 650px;
+    background:silver;
+    position: relative;
+    top: -400px;
+    
+}
+/* hot照片处理 */
+.img-hot{
+    width: 300px;
+    height: 120px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* 理论教育 */
+.lm{  /* 右 总模板 */
+    width: 400px;
+    height: 600px;
+    position: relative;
+    left: 860px;
+    top: -570px;
+}
+
+.lm > div{
+    width: 400px;
+    font-size: 20px;
+    margin: 10px 20px;
+    height: 200px;
+    line-height: 20px;
+}
+a.alilun{
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 滚动照片墙 */
+          
+@keyframes move{
+    0%{transform: rotateY(0deg);}
+    10%{transform: rotateY(36deg);}
+    20%{transform: rotateY(72deg);}
+    30%{transform: rotateY(108deg);}
+    40%{transform: rotateY(144deg);}
+    50%{transform: rotateY(180deg);}
+    60%{transform: rotateY(216deg);}
+    70%{transform: rotateY(252deg);}
+    80%{transform: rotateY(288deg);}
+    90%{transform: rotateY(324deg);}
+    100%{transform: rotateY(360deg);}   
+}
+
+.box{width: 300px;height:300px;transform-style: preserve-3d; perspective: 1000px;margin:100px auto;}
+.usc-p{width:200px;height:200px;position: relative;transform-style: preserve-3d;margin:100px auto;animation: move 20s linear infinite;transform: rotateX(30deg);}
+.usc-p li{width:100px;height:200px;overflow: hidden;position: absolute;top:0;left: 0; overflow: hidden;transition: 1s all ease;}
+.usc-p li img{width:100px;height:200px;}
+.usc-p li:hover img{width:120px;height:220px;}
+.usc-p li img{width:100px;height:200px;}
+
+.usc-p li:nth-child(1){transform: rotateY(30deg) translateZ(200px);}
+.usc-p li:nth-child(2){transform: rotateY(60deg) translateZ(200px);}
+.usc-p li:nth-child(3){transform: rotateY(90deg) translateZ(200px);}
+.usc-p li:nth-child(4){transform: rotateY(120deg) translateZ(200px);}
+.usc-p li:nth-child(5){transform: rotateY(150deg) translateZ(200px);}
+.usc-p li:nth-child(6){transform: rotateY(180deg) translateZ(200px);}
+.usc-p li:nth-child(7){transform: rotateY(210deg) translateZ(200px);}
+.usc-p li:nth-child(8){transform: rotateY(240deg) translateZ(200px);}
+.usc-p li:nth-child(9){transform: rotateY(270deg) translateZ(200px);}
+.usc-p li:nth-child(10){transform: rotateY(300deg) translateZ(200px);}
+.usc-p li:nth-child(11){transform: rotateY(330deg) translateZ(200px);}
+.usc-p li:nth-child(12){transform: rotateY(0deg) translateZ(200px);}    
+
+.box{
+    position: relative;
+    top: -200px;
+    left: -300px;
+}
+
+.yejiao{
+    padding-top: 200px;
+    float: inline-end;
+    position: relative;
+    background: #eee;
+    top: -200px;
+    width: 1400px;
+    height: 140px;
+    color: blue;
+}
+p{
+    position: relative;
+    top: -20px;
+}
+span{
+    display: inline-block;
+    margin-left: 200px;
+    color: red;
+}
+.span{
+    margin-left: 20px;
+    color: #0058A0;
+}
+/* 二维码 */
+.erwm img{
+    width: 200px;
+    height: auto;
+}
+.er1{
+    position: relative;
+    left: 800px;
+    top: -200px;
+}
+.er2{
+    position: relative;
+    left: 860px;
+    top: -200px;
+}
